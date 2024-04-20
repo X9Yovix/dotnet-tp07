@@ -15,12 +15,12 @@ namespace TP07.Models
         public double Price { get; set; }
         public int Qte { get; set; }
 
-        public int CategorieID { get; set; }
-        [ForeignKey("CategorieID")]
+        public int CategorieId { get; set; }
+        [ForeignKey("CategorieId")]
         public Categorie Categorie { get; set; }
 
-        public int MarqueID { get; set; }
-        [ForeignKey("MarqueID")]
+        public int MarqueId { get; set; }
+        [ForeignKey("MarqueId")]
         public Marque Marque { get; set; }
     }
 }

@@ -127,7 +127,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CategorieController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MarqueController.cs" />
+    <Compile Include="Controllers\ProduitController.cs" />
     <Compile Include="DAL\EcommerceContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -189,6 +192,18 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Produit\Create.cshtml" />
+    <Content Include="Views\Produit\Index.cshtml" />
+    <Content Include="Views\Categorie\Create.cshtml" />
+    <Content Include="Views\Categorie\Delete.cshtml" />
+    <Content Include="Views\Categorie\Details.cshtml" />
+    <Content Include="Views\Categorie\Edit.cshtml" />
+    <Content Include="Views\Categorie\Index.cshtml" />
+    <Content Include="Views\Marque\Create.cshtml" />
+    <Content Include="Views\Marque\Delete.cshtml" />
+    <Content Include="Views\Marque\Details.cshtml" />
+    <Content Include="Views\Marque\Edit.cshtml" />
+    <Content Include="Views\Marque\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

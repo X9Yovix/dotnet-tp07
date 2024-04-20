@@ -1,0 +1,51 @@
+﻿
+@model IEnumerable<TP07.Models.Produit>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Categorie
+        </th>
+        <th>
+            Marque
+        </th>
+        <th>
+            Produit
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qte)
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categorie.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marque.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qte)
+            </td>
+        </tr>
+    }
+</table>
+
